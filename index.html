@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div id="titulo">
+    <h1>Bienvenido al seleccionador de juegos gratuitos</h1>
+    </div>
+    
+    <asside class="textoBienvenida">
+    <div> Hoy en dia comprar un juego es muy caro y es dificil saber si el dinero gastado va a resultar en una buena invercion o por el contrario vas a terminar arrepintirndote.
+        esta pagina esta echa con el fin de evaluar tus preferencias y recomendarte juegos que probablemente te gusten y ademas son gratuitos para que no te preocupes del gasto.
+    </div>
+    </asside>
+    <div class="cuerpo">
+        <div class="filtro-box">
+            <h3 class="cabecera-3"> <span class="mif-shareable"></span> Filtrar por género/s:</h3>
+            <div>
+                <input class="boton-normal" id="boton-shoter" type="submit" value="Shooter">
+             
+               <input class="boton-normal" id="boton-mmorpg" type="submit" value="Mmorpg">
+            
+                <input class="boton-normal" id="boton-mmo" type="submit" value="Mmo">
+
+                <input class="boton-normal" id="boton-strategy" type="submit" value="strategy" >
+
+                <input class="boton-normal" id="boton-survival" type="submit" value="survival">
+
+                
+            </div>    
+        </div>
+        <div class="filtro-box">
+            <h3 class="cabecera-3"> <span class="mif-shareable"></span> Plataforma:</h3>
+            <div>
+                <input class="boton-normal" id="boton-plataforma-1" type="submit" value="PC">
+             
+               <input class="boton-normal" id="boton-plataforma-2" type="submit" value="Browser">
+            
+            </div>    
+        </div>
+        
+        <input class="boton-normal" id="boton-filtrador" type="submit" value="Filtrar">
+        <input class="boton-normal" id="boton-borrador" type="submit" value="Borrar">
+    </div>
+    <aside id="seccionSeleccionados">
+        <div id="juegoElegido">
+            
+        </div>
+    </aside>
+    
+<script src="js/main.js"></script> 
+</body>
+</html>
