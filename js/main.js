@@ -79,8 +79,8 @@ $("#boton-plataforma-2").click(() => {
 
 // boton filtrador evento
 $("#boton-filtrador").on(`click`, () => {
+    
     analizarPreferencias()
-
 })
 
 // boton borrador, elimina los datos del local storage
@@ -95,6 +95,12 @@ $("#boton-borrador").on(`click`, () => {
 
 // esta funcion toma los parametros ingresados y genera una lista de los juegos pedidos en base a una api
 function analizarPreferencias() {
+    localStorage.clear()
+    $(".juegos").fadeOut("slow", function () {
+        let juegosViejos = document.getElementById("juegoElegido");
+        juegosViejos.parentNode.removeChild(juegosViejos)
+        $("#seccionSeleccionados").append("<div id=juegoElegido></div>")
+    })
 
     //esta funcion soma la api que necestio y itinera los objetos para luego guardarlos en el storage en formato json
     function almacenador(api) {
